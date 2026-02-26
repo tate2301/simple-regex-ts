@@ -8,9 +8,9 @@ const RemoveWhiteSpace = (str: string): string => str.replace(/\s/g, '');
  */
 const TestMobileNumber = (mobileNumber: string): boolean => {
   const isValidMobileNumber: boolean =
-    MobileNumber.Econet.test(RemoveWhiteSpace(mobileNumber)) ||
-    MobileNumber.Telecel.test(RemoveWhiteSpace(mobileNumber)) ||
-    MobileNumber.Netone.test(RemoveWhiteSpace(mobileNumber));
+    MobileNumber.Econet.test(mobileNumber) ||
+    MobileNumber.Telecel.test(mobileNumber) ||
+    MobileNumber.Netone.test(mobileNumber);
   return isValidMobileNumber;
 };
 
